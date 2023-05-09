@@ -57,6 +57,13 @@ while True:
                 print(quotient)
             except ValueError:
                 print("Invalid. Please try again")
+
+    #Ask the user if they want to do another calculation
+    another_calculation = input("Do you want to do another calculation?(y/n)") 
+    if another_calculation == "n":
+        print("Thank you for using this calculator")  
+    else:
+        print("Proceeding to another calculation")    
 #Make the user input numbers
 #Add the numbers
 #Subtract the numbers
