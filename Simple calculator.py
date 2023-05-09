@@ -1,14 +1,16 @@
 #Guide
-print("Calculator operation")
-print("Type 1 if you want to use Addition")
-print("Type 2 if you want to use Subtraction")
-print("Type 3 if you want to use Multiplication")
-print("Type 4 if you want to use Division")
+print("")
+print("Calculator operations:")
+print("Type 1 if you want to use Addition(+)")
+print("Type 2 if you want to use Subtraction(-)")
+print("Type 3 if you want to use Multiplication(x)")
+print("Type 4 if you want to use Division(/)")
 
 #Ask the user what operation they want to use
 while True:
+    print("")
     operation = input("What operation would you like to use?: ")
-
+    print("")
     #check if the choice of the user is between 1-4
     if operation in ("1", "2", "3", "4"):
 
@@ -20,7 +22,7 @@ while True:
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
                 sum = num1 + num2
-                print(sum)
+                print("The sum is:", sum)
             except ValueError:
                 print("Invalid. Please try again")
         
@@ -32,7 +34,7 @@ while True:
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
                 difference = num1 - num2
-                print(difference)
+                print("The difference is:", difference)
             except ValueError:
                 print("Invalid. Please try again")
         
@@ -44,7 +46,7 @@ while True:
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
                 product = num1*num2
-                print(product)
+                print("The product is:", product)
             except ValueError:
                 print("Invalid. Please try again")
         
@@ -56,15 +58,18 @@ while True:
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
                 quotient = num1/num2
-                print(quotient)
+                print("The quotient is:", quotient)
             except ValueError:
                 print("Invalid. Please try again")
 
     #Ask the user if they want to do another calculation
-    another_calculation = input("Do you want to do another calculation?(y/n)") 
+    print("")
+    another_calculation = input("Do you want to do another calculation?(y/n):") 
     if another_calculation == "n":
+        print("")
         print("Thank you for using this calculator")  
         break
     else:
-        print("Proceeding to another calculation")    
+        print("")
+        print("Proceeding to another calculation...")    
         
