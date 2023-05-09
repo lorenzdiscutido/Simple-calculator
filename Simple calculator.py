@@ -64,6 +64,7 @@ while True:
     another_calculation = input("Do you want to do another calculation?(y/n)") 
     if another_calculation == "n":
         print("Thank you for using this calculator")  
+        break
     else:
         print("Proceeding to another calculation")    
-        break
+        
