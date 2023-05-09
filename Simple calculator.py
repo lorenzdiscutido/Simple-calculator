@@ -36,13 +36,25 @@ while True:
         
         #Multiply the numbers
         elif operation == "3":
-            print("Choice of operation: Multiply")
+            print("Choice of operation: Multiplication")
             try:
                 #Ask for their first and second number to multiply
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
                 product = num1*num2
-                print(difference)
+                print(product)
+            except ValueError:
+                print("Invalid. Please try again")
+        
+        #Divide the numbers
+        elif operation == "4":
+            print("Choice of operation: Division")
+            try:
+                #Ask for their first and second number to divide
+                num1 = float(input("Please enter your first number:"))
+                num2 = float(input("Please enter your second number:"))
+                quotient = num1/num2
+                print(quotient)
             except ValueError:
                 print("Invalid. Please try again")
 #Make the user input numbers
