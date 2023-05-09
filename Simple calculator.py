@@ -33,6 +33,18 @@ while True:
                 print(difference)
             except ValueError:
                 print("Invalid. Please try again")
+        
+        #Multiply the numbers
+        elif operation == "3":
+            print("Choice of operation: Multiply")
+            try:
+                #Ask for their first and second number to multiply
+                num1 = float(input("Please enter your first number:"))
+                num2 = float(input("Please enter your second number:"))
+                product = num1*num2
+                print(difference)
+            except ValueError:
+                print("Invalid. Please try again")
 #Make the user input numbers
 #Add the numbers
 #Subtract the numbers
