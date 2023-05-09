@@ -19,6 +19,8 @@ while True:
                 #Ask for their first and second number
                 num1 = float(input("Please enter your first number:"))
                 num2 = float(input("Please enter your second number:"))
+                sum = num1 + num2
+                print(sum)
             except ValueError:
                 print("Invalid. Please try again")
         
