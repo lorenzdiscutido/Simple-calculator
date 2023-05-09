@@ -59,7 +59,7 @@ while True:
                 num2 = float(input("Please enter your second number:"))
                 quotient = num1/num2
                 print("The quotient is:", quotient)
-            except ValueError:
+            except (ValueError, ZeroDivisionError):
                 print("Invalid. Please try again")
 
     #Ask the user if they want to do another calculation
