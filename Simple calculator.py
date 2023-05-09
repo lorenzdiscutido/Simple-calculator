@@ -71,5 +71,5 @@ while True:
         break
     else:
         print("")
-        print("Proceeding to another calculation...")    
+        print("Proceeding to another calculation....")    
         
