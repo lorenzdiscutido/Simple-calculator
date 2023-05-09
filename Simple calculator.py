@@ -66,3 +66,4 @@ while True:
         print("Thank you for using this calculator")  
     else:
         print("Proceeding to another calculation")    
+        break
